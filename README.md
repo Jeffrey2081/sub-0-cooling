@@ -44,7 +44,7 @@ The monitoring script requires `pyserial`:
 ```bash
 pip install pyserial
 ```
-    *Note: The script reads from `/sys/class/thermal/thermal_zone0/temp`. Ensure your user has permissions to read this file.*
+ *Note: The script reads from `/sys/class/thermal/thermal_zone0/temp`. Ensure your user has permissions to read this file.*
 ## 🚀 Installation & Usage
 
 ### 1. Arduino Setup
