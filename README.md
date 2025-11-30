@@ -43,3 +43,19 @@ Install the following via the Arduino Library Manager:
 The monitoring script requires `pyserial`:
 ```bash
 pip install pyserial
+
+## 🚀 Installation & Usage
+
+### 1. Arduino Setup
+1.  Connect hardware according to the pinout above.
+2.  Open `arduino.ino`.
+3.  Upload the code to your Arduino board.
+
+### 2. PC Setup (Linux)
+1.  Ensure you have `python3` installed.
+2.  Edit `monitor.py` if your Arduino is not on `/dev/ttyUSB0`.
+3.  Run the monitor script:
+    ```bash
+    python3 monitor.py
+    ```
+    *Note: The script reads from `/sys/class/thermal/thermal_zone0/temp`. Ensure your user has permissions to read this file.*
